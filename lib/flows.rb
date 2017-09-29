@@ -1,5 +1,6 @@
-require "flows/version"
+# frozen_string_literal: true
 
-module Flows
-  # Your code goes here...
-end
+require 'flows/version'
+
+# Execution flows infrastructure library with focus on performance.
+module Flows; end
