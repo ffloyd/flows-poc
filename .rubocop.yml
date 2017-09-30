@@ -12,3 +12,4 @@ Style/AsciiComments:
 Metrics/BlockLength:
   Exclude:
     - spec/**/*
+    - flows.gemspec

@@ -6,8 +6,8 @@ module Flows
     class UnexpectedSignal < StandardError; end
 
     class << self
-      def call(schema, data) # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
-        enter_point, nodes = schema
+      def call(raw_schema, data) # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
+        enter_point, nodes = raw_schema
 
         current_node = nodes[enter_point]
         loop do
